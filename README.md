@@ -48,6 +48,7 @@ After a cat has eaten its food their reaction tends to differ between species
 
 As a bonus exercise some domestic cats will randomly let out a dismissive "It will do I suppose" comment following eating.
 
+We've created the Cat interface to get you started 
 
 ## Your solution should have...
 
