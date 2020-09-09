@@ -1,9 +1,8 @@
 package com.techreturners.cats;
 
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertTrue;
-
 import org.junit.Test;
+
+import static org.junit.Assert.*;
 
 public class CatTest {
 
@@ -28,5 +27,22 @@ public class CatTest {
         assertFalse("Cat should be awake now", domesticCat.isAsleep());
     }
 
+    @Test
+    public void checkCatSetting() {
+        Cat domesticCat = new DomesticCat();
+        assertEquals("domestic", domesticCat.getSetting());
+    }
+
+    @Test
+    public void checkCatHeight() {
+        Cat domesticCat = new DomesticCat();
+        assertEquals(23, domesticCat.getAverageHeight());
+    }
+
+    @Test
+    public void checkLionHeight() {
+        Cat domesticCat = new LionCat();
+        assertEquals(1100, domesticCat.getAverageHeight());
+    }
     
 }
