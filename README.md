@@ -2,7 +2,7 @@
 
 ## Instructions
 
-This repository contains challenges you to undertake in pairs on Java.
+This repository contains challenges you to undertake around object oriented programming in Java.
 
 (The instructions below assume you have got your laptop setup ready for running Java applications as per the pre-journey)
 
