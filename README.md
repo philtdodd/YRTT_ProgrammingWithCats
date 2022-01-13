@@ -2,7 +2,7 @@
 
 ## Instructions
 
-This repository contains challenges you to undertake around object oriented programming in Java. You can work on these
+This repository contains challenges for you to undertake around Object-Oriented programming in Java. You can work on these
 challenges individually or in a pair.
 
 (The instructions below assume you have got your laptop setup ready for running Java applications as per the pre-journey)
