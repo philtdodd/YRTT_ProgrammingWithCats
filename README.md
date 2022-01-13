@@ -2,7 +2,8 @@
 
 ## Instructions
 
-This repository contains challenges you to undertake around object oriented programming in Java.
+This repository contains challenges for you to undertake around Object-Oriented programming in Java. You can work on these
+challenges individually or in a pair.
 
 (The instructions below assume you have got your laptop setup ready for running Java applications as per the pre-journey)
 
@@ -16,9 +17,9 @@ mvn test
 
 You'll see that all the tests are currently failing.
 
-Working in your pairs you job is to one by one fix the failing tests.
+Your job is to one by one fix the failing tests.
 
-We recommend working on one persons machine during pairing but once your session has ended send over the code to your pair so that you both have a copy.
+If you are working in a pair, we recommend working on one person's machine during pairing, but once your session has ended send over the code to your pair so that you both have a copy.
 
 ## Some facts about your objects
 
