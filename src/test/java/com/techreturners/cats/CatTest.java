@@ -1,7 +1,10 @@
 package com.techreturners.cats;
 
 import org.junit.jupiter.api.Test;
+
 import static org.junit.jupiter.api.Assertions.*;
+import static org.hamcrest.Matchers.*;
+import static org.hamcrest.MatcherAssert.*;
 
 public class CatTest {
 
@@ -58,8 +61,43 @@ public class CatTest {
     }
 
     @Test
+    public void checkNotDomesticTheCheetah() {
+        Cat cheetahCat = new CheetahCat();
+        assert(!cheetahCat.isCatDomestic());
+    }
+
+    @Test
     public void feedTheCat() {
         Cat domesticCat = new DomesticCat();
-        assertEquals("Purrrrrrr", domesticCat.eat());
+        String response;
+
+        /*
+         * Run the tests until both return values have been
+         * returned or assert false if 100 tests have not produced
+         * both messages so the test does not loop forever.
+         */
+        int iterations = 0;
+        final int MAX_ITERATIONS = 100;
+        boolean hasPurred = false;
+        boolean hasBeenDismissive = false;
+
+
+        while (!(hasPurred && hasBeenDismissive) && iterations < MAX_ITERATIONS) {
+            response = domesticCat.eat();
+
+            switch (response) {
+                case "Purrrrrrr":
+                    hasPurred = true;
+                    break;
+                case "It will do I suppose":
+                    hasBeenDismissive = true;
+                    break;
+            }
+
+            assertThat(response, isOneOf("Purrrrrrr", "It will do I suppose"));
+            iterations++;
+        }
+
+        assert (iterations < MAX_ITERATIONS);
     }
 }
